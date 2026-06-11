@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concurso Agrinho 2026</title>
+    <style>
+        /* Cores modernas em tons pastéis: Verde, Verde Claro e Amarelo */
+        :root {
+            --verde-escuro: #4A7c59;
+            --verde-claro: #D1E7DD;
+            --amarelo-pastel: #FFF3CD;
+            --texto-escuro: #2C3E50;
+            --branco: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--verde-claro);
+            color: var(--texto-escuro);
+            line-height: 1.6;
+        }
+
+        /* CSS: Utilizando Flexbox e seletores específicos */
+        header {
+            background-color: var(--verde-escuro);
+            color: var(--branco);
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 5px solid var(--amarelo-pastel);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        /* Seção de Interação (Formulário Semântico) */
+        #secao-boas-vindas {
+            background-color: var(--branco);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .campo-formulario {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        label {
+            font-weight: bold;
+            color: var(--verde-escuro);
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border: 2px solid var(--verde-claro);
+            border-radius: 5px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        input[type="text"]:focus {
+            border-color: var(--verde-escuro);
+        }
+
+        /* Histórias e Conteúdo */
+        #container-historia {
+            background-color: var(--branco);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: none; /* Começa escondido até o usuário interagir */
+        }
+
+        .mensagem-agrinho {
+            background-color: var(--amarelo-pastel);
+            padding: 15px;
+            border-left: 5px solid var(--verde-escuro);
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .paragrafo-historia {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Botões e Links Semânticos */
+        .btn-principal {
+            background-color: var(--verde-escuro);
+            color: var(--branco);
+            border: none;
+            padding: 12px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            align-self: flex-start;
+        }
+
+        .btn-principal:hover {
+            background-color: #385E43;
+        }
+
+        #secao-quiz {
+            margin-top: 30px;
+            text-align: center;
+            background-color: var(--amarelo-pastel);
+            padding: 25px;
+            border-radius: 10px;
+            border: 2px dashed var(--verde-escuro);
+        }
+
+        .link-quiz {
+            display: inline-block;
+            background-color: var(--verde-escuro);
+            color: var(--branco);
+            text-decoration: none;
+            padding: 15px 30px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .link-quiz:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</h1>
+        <p>A força do Sol é o insumo da natureza que desenvolve a produção</p>
+    </header>
+
+    <main>
+        <section id="secao-boas-vindas">
+            <h3>Bem-vindo ao nosso portal do Agrinho!</h3>
+            <p>Antes de começarmos a nossa jornada sustentável, como podemos te chamar?</p>
+            
+            <div class="campo-formulario">
+                <label for="nome-usuario">Seu Nome:</label>
+                <input type="text" id="nome-usuario" placeholder="Digite seu nome aqui...">
+            </div>
+            
+            <button type="button" id="btn-iniciar" class="btn-principal">Iniciar História</button>
+        </section>
+
+        <section id="container-historia">
+            <div class="mensagem-agrinho">
+                <p>Bem-vindo à jornada do Agrinho!</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
